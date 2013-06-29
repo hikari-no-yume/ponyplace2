@@ -1,0 +1,33 @@
+<!doctype html>
+<meta charset=utf-8>
+<title>ponyplace</title>
+
+<h1>ponyplace</h1>
+
+<div id=container></div>
+
+<script src=core.js></script>
+<script src=constants.js></script>
+<script src=dom.js></script>
+<script src=network.js></script>
+<script src=ponies.js></script>
+<script src=init.js></script>
+<noscript>ponyplace is a pony-themed chatroom (unaffiliated with Hasbro). It requires JavaScript to run.</noscript>
+
+<script id=login-template type="text/html-template">
+    <h2>Login</h2>
+    <label for=nickname>Nickname (a-z, 0-9 and _ only)</label><input type=text maxlength=18 id=nickname><br>
+    <input type=submit value=Join id=login-btn>
+</script>
+<script id=connecting-template type="text/html-template">
+    <h2>Connecting...</h2>
+</script>
+<script id=connectfail-template type="text/html-template">
+    <h2>Connection failed</h2>
+    <div id=error></div>
+</script>
+<script id=connectloss-template type="text/html-template">
+    <h2>Connection loss</h2>
+    <div id=error></div>
+</script>
+<script id=connected-template type="text/html-template"></script>
